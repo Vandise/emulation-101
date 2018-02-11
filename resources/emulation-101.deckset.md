@@ -122,6 +122,9 @@ autoscale: true
 
 This is the core of our emulator, a piece of software that loads a program into *memory*, executes instructions and interprets what it should do. Update a register, read a memory address, display a sprite, etc.
 
+^ branch 3.basic-cpu
+^ demo executing instructions, setting a register value
+
 ---
 
 # Questions this far?
