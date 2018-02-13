@@ -147,13 +147,15 @@ This is the core of our emulator, a piece of software that loads a program into 
 
 *We will be going over Chip8 in much more detail, this was a brief introduction into the hardware we have to emulate*
 
+Congratulations! You build your first, fragmented, emulator!
+
 ---
 
 # Maths - Bitwise Operations
 
 Manipulates *bits* in a byte with logical operations.
 
-Chip8 instructions are 2 bytes (16-bits) long and broken into *4-bit* (*1-nybble*) chunks for interpretation. They can be combined to make a max *12-byte* value.
+Chip8 instructions are 2 bytes (16-bits) long and broken into *4-bit* (*1-nybble*) chunks for interpretation. They can be combined to make a max *12-bit* value.
 
 The following is a Chip8 instruction we need to parse:
 
@@ -277,6 +279,8 @@ Chip-8 is a simple, interpreted, programming language which was first used on so
 0x63 0x05 0xD2 0x35 0x12 0x0A
 
 ```
+
+^ chip8, ./bin/chip8 resources/pong --test
 
 ---
 
