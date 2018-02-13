@@ -149,6 +149,8 @@ This is the core of our emulator, a piece of software that loads a program into 
 
 Congratulations! You build your first, fragmented, emulator!
 
+^ explain demo of mini emulator after bit operations
+
 ---
 
 # Maths - Bitwise Operations
@@ -264,6 +266,9 @@ Endianness is the order of bytes and which is considered the "most" or "least" s
         |----------|  
   
 ```
+
+^ demo branch 5.mini-emulator
+^ instructions are two bytes
 
 ---
 
