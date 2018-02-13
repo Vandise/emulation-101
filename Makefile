@@ -39,7 +39,7 @@ directories:
 	mkdir -p $(INCDIR)
 
 emulator:
-	$(CC) $(CXXSTD) $(INC) $(LEXERFILES) -o $(TARGETDIR)/$(TARGET)
+	$(CC) $(CXXSTD) $(INC) $(LEXERFILES) -o $(TARGETDIR)/$(TARGET) -lSDL2
 
 tests:
 	$(CC) $(CXXSTD) $(INC) $(TESTFILES) -o $(TARGETDIR)/$(TESTTARGET)
