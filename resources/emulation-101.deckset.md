@@ -22,6 +22,8 @@ autoscale: true
 
 ^ We'll be looking at some binary and hex values. They have no meaning without context. When given context, we end up with computer software.
 
+^ data is not information!
+
 ---
 
 # What?
@@ -52,6 +54,19 @@ autoscale: true
 ![inline](https://imgs.xkcd.com/comics/ballmer_peak.png)
 
 ---
+# For those who want to follow along
+
+Code can be found here:
+
+- https://github.com/Vandise/Chip8
+- https://github.com/Vandise/emulation-101
+
+These slides use branches in the emulation-101 repository.
+
+Mac, Linux, or WSL only. Windows if you tweek the Makefile... maybe.
+
+---
+
 # [fit] What is a program?
 
 ```c
@@ -77,20 +92,6 @@ autoscale: true
 
 ^ Reference branch 1.program on how memory can be addressed.
 ^ At address 0010 we have 0x10F0
-
----
-
-# Hardware - Display
-
-* Some sort of visual output. Monitors, TVs, LEDs.
-* Atari had no video ram! RF channel 3 or 4 (NTSC/Analog)
-* Rendered with Integrated Graphics, Graphics Cards
-	* Display information is wrote to dedicated video memory
-	* It is then rendered by the display hardware (PPU)
-	* *Note that this is a extremely simplified version*
-	* Chip8 uses a 64x32 pixel monochrome display (2kb)
-
-^ No demo. branch
 
 ---
 
@@ -124,6 +125,21 @@ This is the core of our emulator, a piece of software that loads a program into 
 
 ^ branch 3.basic-cpu
 ^ demo executing instructions, setting a register value
+
+---
+
+# Hardware - Display
+
+* Some sort of visual output. Monitors, TVs, LEDs.
+* Atari had no video ram! RF channel 3 or 4 (NTSC/Analog)
+* Rendered with Integrated Graphics, Graphics Cards
+	* Display information is wrote to dedicated video memory
+	* It is then rendered by the display hardware (PPU)
+	* *Note that this is a extremely simplified version*
+	* Chip8 uses a 64x32 pixel monochrome display (2kb)
+
+^ 4.display
+^ SDL and bit rendering with textures
 
 ---
 
